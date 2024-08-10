@@ -1,3 +1,3 @@
 #! /bin/bash
 
-stow bash i3 nvim wezterm tmux;
+stow bash polybar i3 nvim wezterm tmux;

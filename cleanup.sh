@@ -12,6 +12,12 @@ if [ -f "$HOME/.tmux.conf" ]; then
   rm "$HOME/.tmux.conf";
 fi
 
+# cleanup polybar
+if [ -d "$XDG_CONFIG_HOME/polybar" ]; then
+  echo "$XDG_CONFIG_HOME/polybar exists. Cleaning...";
+  rm -r "$XDG_CONFIG_HOME/polybar";
+fi
+
 # cleanup i3
 if [ -d "$XDG_CONFIG_HOME/i3" ]; then
   echo "$XDG_CONFIG_HOME/i3 exists. Cleaning...";
